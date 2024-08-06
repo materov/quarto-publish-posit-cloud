@@ -1,0 +1,16 @@
+---
+title: "О блоге"
+image: profile.jpg
+about:
+  template: solana
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com
+
+---
+
+Коротко о блоге.

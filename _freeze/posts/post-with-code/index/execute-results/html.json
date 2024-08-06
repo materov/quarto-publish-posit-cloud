@@ -1,0 +1,17 @@
+{
+  "hash": "7eac4266c0eb752a4536b1c5278ae90c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Пост с элементом кода\"\nauthor: \"Иванов\"\ndate: \"2024-12-06\"\ncategories: [новости, код, анализ]\nimage: \"image.jpg\"\n---\n\n\n\nПост с элементом кода.\n\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nmass_flipper <- ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n  geom_point(aes(color = species, \n                 shape = species),\n                 size = 3,\n                 alpha = 0.8) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(title = \"Размер пингвина\",\n       subtitle = \"Длина ласт и масса тела пингвинов Adelie, Chinstrap и Gentoo\",\n       x = \"Длина плавника (мм)\",\n       y = \"Масса тела (г)\",\n       color = \"Виды пингвинов\",\n       shape = \"Виды пингвинов\") +\n  theme_minimal(base_size = 13) +\n  theme(legend.position = c(0.2, 0.7),\n        plot.title.position = \"plot\",\n        plot.caption = element_text(hjust = 0, face= \"italic\"),\n        plot.caption.position = \"plot\")\n\nmass_flipper\n```\n\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "О блоге",
+    "section": "",
+    "text": "Коротко о блоге."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Добро пожаловать в блог",
+    "section": "",
+    "text": "Это первая запись в блоге Quarto. Добро пожаловать!\n\nПоскольку в этом посте явно не указан image, первое изображение в посте будет использовано в качестве превью на странице со списком публикаций."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Пост с элементом кода",
+    "section": "",
+    "text": "Пост с элементом кода.\n\nlibrary(palmerpenguins)\nlibrary(ggplot2)\n\nmass_flipper &lt;- ggplot(data = penguins, \n                       aes(x = flipper_length_mm,\n                           y = body_mass_g)) +\n  geom_point(aes(color = species, \n                 shape = species),\n                 size = 3,\n                 alpha = 0.8) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(title = \"Размер пингвина\",\n       subtitle = \"Длина ласт и масса тела пингвинов Adelie, Chinstrap и Gentoo\",\n       x = \"Длина плавника (мм)\",\n       y = \"Масса тела (г)\",\n       color = \"Виды пингвинов\",\n       shape = \"Виды пингвинов\") +\n  theme_minimal(base_size = 13) +\n  theme(legend.position = c(0.2, 0.7),\n        plot.title.position = \"plot\",\n        plot.caption = element_text(hjust = 0, face= \"italic\"),\n        plot.caption.position = \"plot\")\n\nmass_flipper"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Пример блога",
+    "section": "",
+    "text": "Пост с элементом кода\n\n\n\n\n\n\nновости\n\n\nкод\n\n\nанализ\n\n\n\n\n\n\n\n\n\n6 дек. 2024 г.\n\n\nИванов\n\n\n\n\n\n\n\n\n\n\n\n\nДобро пожаловать в блог\n\n\n\n\n\n\nновости\n\n\n\n\n\n\n\n\n\n3 дек. 2024 г.\n\n\nПетров\n\n\n\n\n\n\nНет подходящих элементов"
+  }
+]

@@ -1,0 +1,42 @@
+---
+title: "Пост с элементом кода"
+author: "Иванов"
+date: "2024-12-06"
+categories: [новости, код, анализ]
+image: "image.jpg"
+---
+
+Пост с элементом кода.
+
+```{r}
+#| warning: false
+#| message: false
+#| code-overflow: wrap
+#| fig-width: 7
+#| fig-height: 6
+
+library(palmerpenguins)
+library(ggplot2)
+
+mass_flipper <- ggplot(data = penguins, 
+                       aes(x = flipper_length_mm,
+                           y = body_mass_g)) +
+  geom_point(aes(color = species, 
+                 shape = species),
+                 size = 3,
+                 alpha = 0.8) +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(title = "Размер пингвина",
+       subtitle = "Длина ласт и масса тела пингвинов Adelie, Chinstrap и Gentoo",
+       x = "Длина плавника (мм)",
+       y = "Масса тела (г)",
+       color = "Виды пингвинов",
+       shape = "Виды пингвинов") +
+  theme_minimal(base_size = 13) +
+  theme(legend.position = c(0.2, 0.7),
+        plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot")
+
+mass_flipper
+```
